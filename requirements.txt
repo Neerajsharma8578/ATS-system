@@ -2,8 +2,4 @@ streamlit
 google-generativeai
 python-dotenv
 pdf2image
-<<<<<<< HEAD
 gunicorn
-=======
-gunicorn
->>>>>>> 65a8a561534b43990646c5aa7032a8fe68d12566
