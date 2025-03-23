@@ -40,6 +40,19 @@ def input_pdf_setup(uploaded_file):
         raise FileNotFoundError("No file uploaded")
 
 ## Streamlit App
+from pdf2image import convert_from_bytes
+
+# Set the path to Poppler's bin folder (update this to your actual path)
+POPPLER_PATH = r"D:\Release-24.08.0-0\poppler-24.08.0\Library\bin"
+
+
+def input_pdf_setup(uploaded_file):
+    images = convert_from_bytes(uploaded_file.read(), poppler_path=POPPLER_PATH)
+    return images
+
+
+
+
 
 st.set_page_config(page_title="ATS")
 st.header("ATS Tracking System")
