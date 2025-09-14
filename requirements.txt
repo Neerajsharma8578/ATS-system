@@ -4,7 +4,10 @@ python-dotenv
 pdf2image
 
 Flask==2.3.2
-numpy==1.25.0
+numpy==1.24.4
 pandas==2.0.1
 
 gunicorn
+
+
+
